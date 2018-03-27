@@ -1,7 +1,7 @@
 # config valid only for Capistrano 3.1
 # lock '3.7.2'
 
-set :application, 'jgqp-backend'
+set :application, 'xiaome-backend'
 set :deploy_user, "deployer"
 
 # set :scm, :git
