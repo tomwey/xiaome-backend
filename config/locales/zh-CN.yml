@@ -46,6 +46,7 @@
       agent_config: '代理配置'
       agent_earn_bill: '代理流水'
       job: '兼职项目'
+      job_task: '代理任务'
     attributes:
       user:
         uid: 'ID'
@@ -82,6 +83,7 @@
         value: '配置值'
         description: '配置说明'
       job:
+        uniq_id: 'ID'
         title: '标题'
         body: '详细介绍'
         company: '所属公司'
@@ -91,6 +93,12 @@
         work_length: '工期'
         opened: '是否上架'
         sort: '显示顺序'
+        created_at: '创建时间'
+        updated_at: '更新时间'
+      job_task:
+        content: '任务内容'
+        job_id: '分配兼职'
+        agent_user_id: '所属代理'
       agent_user:
         uniq_id: 'ID'
         name: '代理人名字'
@@ -98,12 +106,16 @@
         address: '代理人地址'
         parent_id: '父级代理人'
         level: '代理人级别'
+        source: '来源'
+        star: '活跃程度'
+        parent: '上级代理'
         balance: '余额'
         earnings: '总收入'
         earn_ratio: '收入提成比例配置'
         blocked_at: '禁用时间'
         note: '备注'
-        created_at: '账号创建时间'
+        created_at: '创建时间'
+        updated_at: '更新时间'
       agent_config:
         key: '配置名称'
         value: '配置值'
